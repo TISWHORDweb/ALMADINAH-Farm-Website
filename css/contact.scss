@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+$color1: #2a7d2e;
+$color2:#0b3d2c;
+.light_green{color: $color1;}
+.dark_green{color: $color2;}
+
+.navbar1{
+    background-image: url(/img/Top-bar-leafs-green.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $color2;
+    padding: 20px 0px;
+    border-bottom: 1px solid #f7f7f7;
+    ul{
+        margin-bottom: 0px;
+    }
+    .first li{
+        list-style: none;
+        font-size: 15px;
+        color: white;
+        cursor: pointer;
+        font-weight: lighter;
+        .down{
+            &:hover{
+                border-bottom: 3px solid white;
+                transition: 0.5s;
+            }
+        }
+    }
+    .second{
+        display: flex;
+        justify-content: space-between;
+        li{
+            list-style: none;
+            color: white;
+            cursor: pointer;
+            &:hover{
+                color: $color2;
+            }
+        }
+    }
+}
+.navbar2{
+    padding: 20px;
+    background-color: white;
+    .logo{
+        color: $color2;
+        font-size: 30px;
+        font-weight: 900;
+        width: 350px;
+        display: flex;
+        align-items: center;
+        img{
+            width: 8%;
+            margin-right: 10px;
+        }
+    }
+    .button{
+        background-color: $color1;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        padding: 7px 15px;
+        box-shadow: 0 0 25px -14px $color1;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        &:hover{
+            color: white !important;
+            background-color: $color2;
+            a{
+                color: white !important;
+            }
+        }
+    }
+    li{
+        list-style: none;
+        cursor: pointer;
+        a{
+            text-decoration: none;
+            color: $color2;
+            &:Hover{
+                color: $color1;
+            }
+        }
+    }
+    .list{
+        li{padding-top: 10px; font-size: 17px;}
+        &:hover{
+            color: $color1;
+        }
+        li{
+            list-style: none;
+            padding: 0px 20px;
+        }
+    }
+}
+
+//BANNER
+.banner{
+    background-image: url(/img/cop.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    h1{
+        font-weight: 600;
+        font-size: 55px;
+        color: white;
+    }
+}
+
+.banners{
+    background-image: url(/img/cpc.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    h1{
+        font-weight: 600;
+        font-size: 55px;
+        color: white;
+    }
+}
+
+.quote{
+    h1{
+        font-size: 60px;
+        color: $color2;
+    }
+    h5{color: $color2;}
+    .quoteset{
+        padding: 30px;
+        background-image: url(/img/leaf-left1-01.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .noos img{
+        height: 100vh !important;
+        object-fit: cover;
+    }
+    button{
+        background-color: $color1;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        color: white;
+        box-shadow: 0 0 25px -14px $color1;
+    }
+}
+
+.footer{
+    center{
+        background-image: url(/img/footer.webp);
+        background-position: center;
+        background-size: cover;
+        h2{
+            color: $color2;
+            svg{
+                color: $color1;
+            }
+        }
+        button{
+            border: 1px solid $color1;
+            background: transparent;
+            padding: 12px 30px;
+            border-radius: 30px;
+           
+            a{
+                text-decoration: none;
+                color: $color1;
+            }
+            &:hover{
+                color: white;
+                background-color: $color1;
+                border: none;
+                transition: 0.5s;
+                a{
+                    color: white;
+                }
+            }
+        }
+        .second{
+            display: flex;
+            margin: 30px;
+            align-items: center;
+            justify-content: center;
+            color: $color1;
+            li{
+                list-style: none;
+                margin: 0px 20px;
+            }
+        }
+    }
+    background-color: #fcfaf7;
+    padding-top: 30px;
+}
+
+.sections6{
+    padding: 50px;
+    h3{
+        color: $color1;
+    }
+    h5{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .banner h1{
+        font-weight: 600;
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .navbar2 .logo{
+        color: $color2;
+        font-size: 20px;
+        font-weight: 600;
+        width: 250px;
+
+    }
+    .navbar1{
+        display: none;
+    }
+    .bord{border: none;}
+    .flower1,.flower2{
+        display: none;
+    }
+    .navbar2{
+        .button{padding: 5px 10px; font-size: 12px;}
+    }
+    .button{padding: 5px 10px !important; font-size: 12px; }
+    .banner h1{
+        font-weight: 600;
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 890px){
+    .banner h1{
+        font-weight: 600;
+        font-size: 35px;
+    }
+    .sections5{
+        h3{
+            font-size: 40px !important;
+        }
+        button{
+            font-size: 15px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 460px){
+    .banner h1{
+        font-weight: 600;
+        font-size: 30px;
+    }
+    .sections5{
+        h3{
+            font-size: 30px !important;
+        }
+        button{
+            font-size: 12px !important;
+        }
+    }
+    .navbar2 .logo{
+        color: $color2;
+        font-size: 17px;
+        font-weight: 600;
+        width: 180px;
+
+    }
+  
+}

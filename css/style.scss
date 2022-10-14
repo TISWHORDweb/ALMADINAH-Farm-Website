@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+$color1: #2a7d2e;
+$color2:#0b3d2c;
+
+.navbar1{
+    background-image: url(/img/Top-bar-leafs-1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    padding: 20px 0px;
+    border-bottom: 1px solid #f7f7f7;
+    ul{
+        margin-bottom: 0px;
+    }
+    .first li{
+        list-style: none;
+        font-size: 15px;
+        color: $color1;
+        cursor: pointer;
+        font-weight: lighter;
+        .down{
+            &:hover{
+                border-bottom: 3px solid $color2;
+                transition: 0.5s;
+            }
+        }
+    }
+    .second{
+        display: flex;
+        justify-content: space-between;
+        li{
+            list-style: none;
+            color: $color1;
+            cursor: pointer;
+            &:hover{
+                color: $color2;
+            }
+        }
+    }
+}
+.navbar2{
+    padding: 20px;
+    background-color: white;
+    .logo{
+        color: $color2;
+        font-size: 30px;
+        font-weight: 900;
+        width: 350px;
+        display: flex;
+        align-items: center;
+        img{
+            width: 8%;
+            margin-right: 10px;
+        }
+    }
+    .button{
+        background-color: $color1;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        padding: 7px 15px;
+        box-shadow: 0 0 25px -14px $color1;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        &:hover{
+            color: white !important;
+            background-color: $color2;
+            a{
+                color: white !important;
+            }
+        }
+    }
+    li{
+        list-style: none;
+        cursor: pointer;
+        a{
+            text-decoration: none;
+            color: $color2;
+            &:Hover{
+                color: $color1;
+            }
+        }
+    }
+    .list{
+        li{padding-top: 10px; font-size: 17px;}
+        &:hover{
+            color: $color1;
+        }
+        li{
+            list-style: none;
+            padding: 0px 20px;
+        }
+    }
+}
+.carousel-caption{
+    bottom: 600px !important;
+    h1{
+        font-size: 60px;
+        font-weight: bolder;
+        margin: 0px; 
+    }
+    h3{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .button1{
+        background: transparent;
+        border: 1px solid white;
+        color: white;
+        padding: 10px 30px;
+        border-radius: 50px;
+        margin: 10px;
+        &:hover{
+            transition: 0.5s;
+            background-color: $color1;
+            border: 1px solid $color1;
+        }
+    }
+    .button2{
+        margin: 10px;
+        background: white;
+        color: $color1;
+        padding: 10px 30px;
+        border-radius: 50px;
+        border: none;
+        &:hover{
+            transition: 0.5s;
+            background-color: $color1;
+            color: white;
+            border: none;
+        }
+    }
+}
+.bord{
+    border-right: 2px solid #f7f7f7;
+}
+.over{
+    background-color: white;
+    padding: 30px;
+    .aligns {
+        background-color: white;
+        padding: 30px;
+        box-shadow: 0px 5px 16px 5px rgba(0, 0, 0, 0.020);
+        center{
+            padding: 20px;
+            cursor: pointer;
+            h3{
+                color: $color1;
+            }
+            .read{
+                color: $color1;
+                border: 1px solid $color1;
+                padding: 5px 10px;
+                width: 100px;
+                margin-top: 10px;
+                font-size: 14px;
+                a{
+                    text-decoration: none;
+                    color: $color1;
+                }
+                &:hover{
+                    transition: 0.5s;
+                    background-color: #2a7d2e;
+                    a{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+.sections2{
+    .texts{
+        h1{
+            color: $color1;
+            font-size: 60px;
+        }
+    }
+   center{
+    padding: 20px 30px;
+        h1{
+            color: $color1;
+            font-size: 80px;
+        }
+        h2{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 800;
+            color: $color1;
+        }
+        h4{
+            color: $color1;
+        }
+        span{
+            border-bottom: 2px solid $color1;
+            width: 90px;
+            color: $color1;
+        }
+   }
+}
+.sections3{
+    background-color: #fbf9f6;
+    .lone{
+        
+        .show1{
+            background-image: url(/img/20220809_152400.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 300px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .show2{
+            background-image: url(/img/20220809_151851.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-size: cover;
+            height: 300px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .show3{
+            background-image: url(/img/20220809_150320.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-size: cover;
+            height: 300px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .show4{
+            background-image: url(/img/pexels-magda-ehlers-1300375.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-size: cover;
+            height: 300px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .show5{
+            background-image: url(/img/pexels-oziel-gómez-1578445.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-size: cover;
+            height: 300px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .show6{
+            background-image: url(/img/istockphoto-1061097354-612x612.jpg);
+            background-position: center;
+            background-size: contain;
+            background-size: cover;
+            height: 300px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .texts{
+            padding : 100px 50px;
+            background-color: white;
+            height: 300px;
+            border-radius: 10px;
+            display: none;
+            h3{
+                color: $color1;
+            }
+        }
+        &:hover{
+            transition: 0.5s;
+            .texts{
+                display: block;
+            }
+        }
+    }
+}
+.sections4{
+    .about{
+        background-image: url(/img/Leaf-1-1.svg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2{
+            color: $color1;
+            font-size: 40px;
+            font-weight: 400;
+        }
+    }
+    .role1{
+        padding-top: 50px;
+
+        .set{
+            margin: 0px 30px;
+        }
+        h3{
+            color: $color1;
+        }
+        svg{
+            color: $color1;
+        }
+    }
+    .role2{
+        background-color: $color1;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 50px;
+        color: white;
+        p{
+            font-size: 15px;
+            color: white;
+        }
+        button{
+            border: 1px solid white;
+            background: transparent;
+            color: white;
+            border-radius: 50px;
+            padding: 12px 30px;
+            margin-bottom: 20px;
+            &:hover{
+                background-color: $color2;
+                transition: 0.5s;
+                border: none;
+            }
+        }
+    }
+    .set11{
+        padding: 100px 50px;
+    }
+}
+.sections5{
+    background-image: url(/img/pic2-2.webp);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-attachment: fixed;
+    button{
+        background-color: white;
+        border: none;
+        border-radius: 30px;
+        padding: 12px 30px;
+        color: $color1;
+        &:hover{
+            background-color: $color1;
+            color: white;
+            transition: 0.5s;
+        }
+    }
+    h3{
+        color: white;
+        font-size: 50px;
+    }
+    h4{
+        color: white;
+    }
+}
+.footer{
+    center{
+        background-image: url(/img/footer.webp);
+        background-position: center;
+        background-size: cover;
+        h2{
+            color: $color2;
+        }
+        button{
+            border: 1px solid $color1;
+            background: transparent;
+            padding: 12px 30px;
+            border-radius: 30px;
+           
+            a{
+                text-decoration: none;
+                color: $color1;
+            }
+            &:hover{
+                color: white;
+                background-color: $color1;
+                border: none;
+                transition: 0.5s;
+                a{
+                    color: white;
+                }
+            }
+        }
+        .second{
+            display: flex;
+            margin: 30px;
+            align-items: center;
+            justify-content: center;
+            color: $color1;
+            li{
+                list-style: none;
+                margin: 0px 20px;
+            }
+        }
+    }
+    background-color: #fcfaf7;
+    padding-top: 30px;
+}
+
+.carousel-inner{
+    height: 100vh;
+    background-position: center;
+    background-size: contain;
+}
+.sections6{
+    padding: 50px;
+    h3{
+        color: $color1;
+    }
+    h5{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .carousel-caption{
+        bottom: 500px !important;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .navbar2 .logo{
+        color: $color2;
+        font-size: 20px;
+        font-weight: 600;
+        width: 250px;
+
+    }
+    .navbar1{
+        display: none;
+    }
+    .bord{border: none;}
+    .flower1,.flower2{
+        display: none;
+    }
+    .navbar2{
+        .button{padding: 5px 10px; font-size: 12px;}
+    }
+    .button{padding: 5px 10px !important; font-size: 12px; }
+    .carousel-caption{
+        bottom: 450px !important;
+        h1{
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0px; 
+        }
+        h3{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .button1{
+            background: transparent;
+            border: 1px solid white;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .button2{
+            margin: 10px;
+            background: white;
+            color: $color1;
+            padding: 5px 15px;
+            border-radius: 20px;
+            border: none;
+        }
+    }
+}
+@media only screen and (max-width: 890px){
+    .carousel-caption{
+        bottom: 300px !important;
+    }
+    .sections5{
+        h3{
+            font-size: 40px !important;
+        }
+        button{
+            font-size: 15px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 460px){
+    .sections5{
+        h3{
+            font-size: 30px !important;
+        }
+        button{
+            font-size: 12px !important;
+        }
+    }
+    .navbar2 .logo{
+        color: $color2;
+        font-size: 17px;
+        font-weight: 600;
+        width: 180px;
+
+    }
+    .carousel-caption{
+        bottom: 60px !important;
+        h1{
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0px; 
+        }
+        h3{
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .button1{
+            background: transparent;
+            border: 1px solid white;
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 10px;
+            font-size: 12px;
+        }
+        .button2{
+            // margin: 10px;
+            // background: white;
+            // color: $color1;
+            // padding: 5px ;
+            // border-radius: 20px;
+            // border: none;
+            // font-size: 12px;
+            display: none;
+        }
+    }
+    .carousel-inner{
+        height: 60vh;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
